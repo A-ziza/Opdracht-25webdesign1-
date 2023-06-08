@@ -1,0 +1,48 @@
+    .photo {
+      width: 300px;
+      height: 400px;
+      margin: 10;
+      border: 5px solid lightyellow;
+    }
+
+    img{
+      width: 300px;
+      height: 400px;
+    }
+    
+    .selected {
+      border-color:rgb(196, 196, 113);
+      border-width: 10px;
+    }
+
+    H1 {
+      text-align: center;
+      color: rgb(54, 23, 54);
+    }
+
+    .text {
+      text-align: center;
+    }
+
+    .gallerij {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body {
+      background: linear-gradient(to bottom,lightpink, white)
+    }
+
+    footer,label,button, input,p{
+      font-size: 20px;
+      text-align: center;
+      color: rgb(54, 23, 54);
+    }
+
+    footer{
+      margin-top: 3%;
+    }
+
+
+   

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <title>Schilderijen en foto's</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" 
+      rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<header><h1><u>Mini gallerij</u></h1></header>
+       <div class="text" id="greeting">
+        <h1>Welkom!</h1>
+        <label for="nameInput">Hoe heet je?:</label>
+        <input type="text" id="nameInput">
+        <button id="greetButton">Versturen</button>
+        <p id="greetingMessage"></p>
+        </div>
+                    <h1>Foto's van plekken en een schilderij</h1>
+                    <div class="gallerij">
+                      <div class="photo" id="noon">
+                      <img src="Afbeeldingen/noon.jpg" alt="noon">
+                      </div>
+                      <div class="photo" id="evening">
+                      <img src="Afbeeldingen/evening.jpg" alt="evening">
+                      </div>
+                      <div class="photo" id="night">
+                      <img src="Afbeeldingen/night.jpg" alt="night">
+                      </div>
+                      <div class="photo" id="morning">
+                      <img src="Afbeeldingen/morning.jpg" alt="morning">
+                      </div>
+                    </div>
+  <script>
+    $(document).ready(function() {
+      $('.photo').click(function() {
+        $('.photo').removeClass('selected');
+        $(this).addClass('selected');
+      });
+    });
+    $(document).ready(function() {
+      $('#greetButton').click(function() {
+        var name = $('#nameInput').val();
+        var greeting = 'Hoi ' + name + ', hoe gaat het?';
+
+        $('#greetingMessage').text(greeting);
+      });
+    });
+  </script>
+<footer>Les 25, 2023</footer>
+</body>
+</html>
